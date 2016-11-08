@@ -134,12 +134,12 @@ This command installs farmNode globally which means that you can access its comm
 #### FarmNode Command Line Tool (Future Development)
 The farmNode Command Line tool would allow for ease of installation, setup and update for the FarmNode software. Example uses would be as follows:
 
-`farmNode enableAP` - command to enable hostapd
-`farmNode disableAP` - command to disable hostapd
-`farmNode name <name>` - name the Kernel / harvester
-`farmNode test` - blinks Arduino Block LED for 10 seconds
-`farmNode setup` - command line interface to set logging intervals, etc
-`farmNode view` - prints a list of logs
+- `farmNode enableAP` - command to enable hostapd
+- `farmNode disableAP` - command to disable hostapd
+- `farmNode name <name>` - name the Kernel / harvester
+- `farmNode test` - blinks Arduino Block LED for 10 seconds
+- `farmNode setup` - command line interface to set logging intervals, etc
+- `farmNode view` - prints a list of logs
 __more...__
 
 
@@ -170,8 +170,11 @@ configuure_edison --wifi
 You will then use the edisons configure tool to search for a wifi address and connect to it to gain access to the internet again. When you are done with your connection you can re-enable hostapd.
 
 
-
 ### Adding FarmNode as a Service (Starts on reboot)
+The Edison is like any other computer, it can be turned on and off and sometimes it crashes. The problem here is that a person isn't always there to restart the software. So, what we need to do is enable FarmNode as what is called a service. Services are pieces of software that run in the background and are usually started on boot up of a computer. 
+
+**NOTE:** This may get wrapped into the FarmNode setup command functionality. 
+
 
 ## Interaction / Using a Kernel
 
