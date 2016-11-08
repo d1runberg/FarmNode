@@ -11,7 +11,7 @@ echo 'Setting AP name and password set...';
 
 # copy the farmNode service file to services directory and set as a service
 
-cp -f [file location in repo] [new location on edison];
+cp -f [file location in repo] /home/root/lib/systemd/system;
 chmod 644 /lib/systemd/system/farmNode.service;
 chown root:root /lib/systemd/system/farmNode.service;
 systemctl daemon-reload;
