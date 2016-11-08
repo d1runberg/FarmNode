@@ -91,6 +91,32 @@ All of the hardware for both a Kernel and Harvest should consist of off the shel
 
 ## Software Installation and Setup
 
+### Installing Firmata on the Arduino Block
+The Edison uses/communicates with the Arduino Block through a communication protocal called [Firmata](#), which is pretty prevelant in the hardware world. It allows a "Master" computer to control and read a "slave" microcontroller. Firmata needs to be installed on the Arudino block before we can use the block with the Edison. Here are the installation instructions for getting StandardFirmataPlus onto the Arduino Block. (Standard firmata plus has access to certain subsets of hardware control that we need to communicate with the GPS)
+
+1. Open StandardFirmataPlus from Arduino
+Open up the Arduino IDE and navigate to __File>Examples>Firmata>StandardFirmataPus
+
+2. Hook up the FTDI Breakout 
+Using a USB to mini USB cable Hookup the FTDI breakout to your computer.
+
+3. Select Board and Port
+The Arduino Block is the same as an Arduino Pro-Mini. From the Tools menu in Arduino, set the board by selecting __Tools> Board...> Arduino Pro/Promini
+
+Then set your port by selecting __Tools> Port> COM##__. You want to select the highest numbered COM port that shows up
+
+4. Plugin FTDI into Arduino Block
+Isert a set of X male pins into the FTDI as shown in the image 
+
+** Insert Image here ** 
+
+Next insert the pins and FTDI into the FTDI header into the Arduino Block as shown below. Make sure that you are lining the FTDI pins up with the header pins so that the names match! Make sure that the pins are in constant contact by lightly leveraging the pins against the sides of the vias (holes) in the circuit board.
+
+** Insert Imager Here **
+
+5. Upload Firmata
+Click the Upload button. Once the Arduino sketch has compiled it should upload and the red and yellow leds on the FTDI should blink rapidly. You should also see the Arduino block LED blink a bit as well. When the upload is complete you can remove the FTDI and the Block is ready to use with the Edison. You will no longer need the Arduino IDE!
+
 ### Setting up the Intel Edison
 
 ### Installing FarmNode
@@ -101,8 +127,21 @@ The FarmNode software can be installed through NPM on your Edison. To install Fa
 
 This command installs farmNode globally which means that you can access its command line command from anywhere on your edison.
 
-
 ... more!
+
+**Note:** What can be scripted and ran as a command vs instruct users to do mannually?
+
+#### FarmNode Command Line Tool (Future Development)
+The farmNode Command Line tool would allow for ease of installation, setup and update for the FarmNode software. Example uses would be as follows:
+
+`farmNode enableAP` - command to enable hostapd
+`farmNode disableAP` - command to disable hostapd
+`farmNode name <name>` - name the Kernel / harvester
+`farmNode test` - blinks Arduino Block LED for 10 seconds
+`farmNode setup` - command line interface to set logging intervals, etc
+`farmNode view` - prints a list of logs
+__more...__
+
 
 ### Configuring HostAPD
 
