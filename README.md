@@ -26,18 +26,21 @@ All of the hardware for both a Kernel and Harvest should consist of off the shel
 #### Kernel BOM
 ##### Electronics Hardware (SparkFun)
 
-1. [Intel Edison](#)
-2. [Edison Battery Block](#)
-3. [Edison Arduino Block](#)
-4. [BME280 Barometric Pressure Sensor](#)
-5. [GPS Module](#)
-6. [Edison Hardware Pack](#)
-7. [Sunny Buddy Solar Charger](#)
-8. [LiPo Battery](#)
-9. [Solar Pannel](#)
-10. [Wire](#)
-11. [External Antenna](#)
-12. [U.FL Antenna Extension](#)
+1. [Intel Edison](#) - used for central computing
+2. [Edison Console Block](#) - access for initial development and setup / Hard link into the Edison console
+3. [Edison Battery Block](#) - Battery / Power
+4. [Edison Arduino Block](#) - Slave Arduino for easier I/0 Control with the Edison
+5. [BME280 Barometric Pressure Sensor](#) - Barometeric Pressure, Alititude, Temperature and Humidity Sensor
+6. [GPS Module](#) - GPS...Location and time
+7. [Edison Hardware Pack](#) - Nuts and bolts to hold the Edison stack together
+8. [Sunny Buddy Solar Charger](#) - Solar charing circuit
+9. [LiPo Battery](#) - Its a battery
+10. [Solar Pannel](#) - Capture the sun's rays!
+11. [Wire](#)
+12. [External Antenna](#) - Broadcasting the wifi AP outside of the enclosure
+13. [U.FL Antenna Extension](#) - Get the antenna connection to outside the enclosure
+
+[SparkFun Wishlist](http://sfe.io/w132177)
 
 ##### Construction Hardware (Home Depot)
 
@@ -58,8 +61,11 @@ All of the hardware for both a Kernel and Harvest should consist of off the shel
 
 1. [Intel Edison](#)
 2. [Edison Battery Block](#)
+3. [Edison Base Block](#)
 3. [OTG Cable](#)
 4. [USB Mass Storage](#)
+
+[SparkFun Wishlist](http://sfe.io/w132809)
 
 ##### Construction Hardware (Home Depot)
 
