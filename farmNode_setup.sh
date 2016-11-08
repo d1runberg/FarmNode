@@ -30,4 +30,4 @@ echo 'Enabling AP...';
 
 echo 'Setup complete!';
 
-
+# Add --> CAPTIVE PORTAL STUFF!!!!!
