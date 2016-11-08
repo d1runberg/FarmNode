@@ -4,18 +4,40 @@ Hardware and software project that is used to collect, log and display agricultu
 ## Description
 
 ### Kernels
+Kernels are small battery powered / solar charged sensor nodes that are placed in a remote location such as a farmers field, strapped to a cherry tree or placed in a chicken coop. A Kernel consists of an [Intel Edison](#) and supporting hardware for the Edison to read sensors and store their data. 
 
-### Harvesters
+The Kernel is programmed uising [Node.js](https://nodejs.org) and [Johnny-Five](https://johnny-five.io) a framework for integrating sensors and actuators with JavaScript. 
+
+The Kernel broadcasts its own [WiFi Access Point](https://en.wikipedia.org/wiki/Wireless_access_point) where a user can connect to it with a personal device (phone, ipad or laptop) and navigate a local website that the Kernel hosts. This site has a number of different options in terms of interacting with the data that the Kernel has collected. 
+
+The Kernel system is designed to be scaleable to a farmers / scientists needs and designed to be self suficient through being super low power and leveraging solar battery charging technology. There is no limit on the number of Kernels that can be deployed in this system beyond expense. 
+
+### Harvesters (Secondary Development)
+Harvesters are similar to Kernels, but do not have any onboard sensors or are solar powered. The Harvester essentially is searching for a Kernels access point and when it finds on it connects to it and downloads its most current log of data. It then deletes that log from the Kernel and creates a new one. Once the AP is no longer in range the Harvester looks for another one to connect to. 
+
+When a Harvester returns "Home" (Finds its WiFi AP at the barn or in the office) it connects to the internet and uploads all of the logs that it has collected to Google Drive. 
+
 
 ## Hardware Specifications
+All of the hardware for both a Kernel and Harvest should consist of off the shelf hardware found from a hardware store and minimal hardware from SparkFun.
 
 ### Bill of Materials
 
-#### Electronics Hardware (SparkFun)
+#### Kernel BOM
+##### Electronics Hardware (SparkFun)
 
-#### Construction Hardware (Home Depot)
+##### Construction Hardware (Home Depot)
 
-### Electronics Assembly Instructions
+#### Harvester BOM
+##### Electronics Hardware (SparkFun)
+
+##### Construction Hardware (Home Depot)
+
+### Electronics Assembly Instructions (Kernel)
+
+### Enclosure Assembly Instructions
+
+### Electronics Assembly Instructions (Harvester)
 
 ### Enclosure Assembly Instructions
 
