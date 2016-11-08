@@ -26,12 +26,52 @@ All of the hardware for both a Kernel and Harvest should consist of off the shel
 #### Kernel BOM
 ##### Electronics Hardware (SparkFun)
 
+1. [Intel Edison](#)
+2. [Edison Battery Block](#)
+3. [Edison Arduino Block](#)
+4. [BME280 Barometric Pressure Sensor](#)
+5. [GPS Module](#)
+6. [Edison Hardware Pack](#)
+7. [Sunny Buddy Solar Charger](#)
+8. [LiPo Battery](#)
+9. [Solar Pannel](#)
+10. [Wire](#)
+11. [External Antenna](#)
+12. [U.FL Antenna Extension](#)
+
 ##### Construction Hardware (Home Depot)
+
+1. [Double Gang outdoor box](#)
+2. [Weather proof double gang face plate](#)
+
+##### Construction Tools
+
+1. [Drill](#)
+2. [_ _" Drill bit](#)
+3. [_ _" Drill bit](#)
+4. [Construction Adhesive](#)
+5. [Phillips Screw Driver or Bit for Drill](#)
+6. [Needle Nose Plier](#)
 
 #### Harvester BOM
 ##### Electronics Hardware (SparkFun)
 
+1. [Intel Edison](#)
+2. [Edison Battery Block](#)
+3. [OTG Cable](#)
+4. [USB Mass Storage](#)
+
 ##### Construction Hardware (Home Depot)
+
+1. [Single Gange Outdoor Box](#)
+2. [Single Gang Weather proof face plate](#)
+
+##### Construction Tools
+
+1. [Drill](#)
+2. [_ _" Drill bit](#)
+3. [Phillips Screw Driver or Bit for Drill](#)
+4. [Needle Nose Plier](#)
 
 ### Electronics Assembly Instructions (Kernel)
 
