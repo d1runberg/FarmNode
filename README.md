@@ -73,21 +73,58 @@ All of the hardware for both a Kernel and Harvest should consist of off the shel
 3. [Phillips Screw Driver or Bit for Drill](#)
 4. [Needle Nose Plier](#)
 
+## Hardware Assembly
+
 ### Electronics Assembly Instructions (Kernel)
 
-### Enclosure Assembly Instructions
+### Enclosure Assembly Instructions (Kernel)
 
 ### Electronics Assembly Instructions (Harvester)
 
-### Enclosure Assembly Instructions
+### Enclosure Assembly Instructions (Harvester)
 
-## Software Specifications
+## Software Installation and Setup
 
 ### Setting up the Intel Edison
 
 ### Installing FarmNode
 
+The FarmNode software can be installed through NPM on your Edison. To install FarmNode type the following.
+
+`npm install farmNode -g`
+
+This command installs farmNode globally which means that you can access its command line command from anywhere on your edison.
+
+
+... more!
+
 ### Configuring HostAPD
+
+Host APD is a software package that comes natively on the Edison and enables you to turn the Edison into a WiFi AP. You control HostAPD through the command line tool called `systemctl` . 
+
+To enable HostAPD on your edison type the following command. 
+
+`systemctl hostapd enable`
+
+The console will return the following information:
+
+```
+info to copy and paste from the console
+```
+
+To disable HostAPD you can type the following:
+
+`systemctl hostapd disable`
+
+Once you have everything setup you shouldn't need to diable hostapd unless you are connecting your Kernel to the web for software updates / development. In that case you will need to disable HostAPD and then reconfigure your edisons wifi to connect your home/ business wifi by typing the following:
+
+```
+systemctl hostapd disable;
+configuure_edison --wifi
+```
+You will then use the edisons configure tool to search for a wifi address and connect to it to gain access to the internet again. When you are done with your connection you can re-enable hostapd.
+
+
 
 ### Adding FarmNode as a Service (Starts on reboot)
 
