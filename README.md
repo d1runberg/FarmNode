@@ -119,6 +119,12 @@ Click the Upload button. Once the Arduino sketch has compiled it should upload a
 
 ### Setting up the Intel Edison
 
+You will be interacting with your edison through a serial terminal, not programming it in Arduino. To get started, use this the SparkFun Getting Started Guide from [this point](https://learn.sparkfun.com/tutorials/edison-getting-started-guide?utm_source=Edison&utm_medium=button&utm_campaign=ProdPg&#setting-up-the-console) on. This should get you setup with using a serial console, updating the firmware on the edison, getting it connected to your local wifi (for development, we will put it in access point mode later).
+
+### Working with The Edison in the Console
+
+about getting started with the console... more to come. 
+
 ### Installing FarmNode
 
 The FarmNode software can be installed through NPM on your Edison. To install FarmNode type the following.
