@@ -125,15 +125,17 @@ You will be interacting with your edison through a serial terminal, not programm
 
 about getting started with the console... more to come. 
 
-### Installing FarmNode
+### Installing farm_kernal
 
 The FarmNode software can be installed through NPM on your Edison. To install FarmNode type the following.
 
-`npm install farmNode -g`
+`npm install farm_kernal -g`
 
-This command installs farmNode globally which means that you can access its command line command from anywhere on your edison.
+This command installs farm_kernal globally which means that you can access its command line command from anywhere on your edison. You should now be able to run the farm_kernal script by typing the following in your console. 
 
-... more!
+`node farm_kernal`
+
+
 
 **Note:** What can be scripted and ran as a command vs instruct users to do mannually?
 
